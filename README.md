@@ -1,5 +1,8 @@
 # efocus-app
 
+# Dev specifications
+Node version 12.18.4
+
 ## Build Setup
 
 ```bash
