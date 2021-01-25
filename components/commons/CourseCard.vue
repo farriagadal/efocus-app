@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="course-card" 
-    :style="{ backgroundImage: 'url(' + imageUrl + ')' }"
-  >
+  <div class="course-card" :style="{ backgroundImage: 'url(' + imageUrl + ')' }" >
     <div class="course-card__label">{{ label }}</div>
     <div class="course-card__text">
       <div class="course-card__text__title">{{ title }}</div>
@@ -25,7 +22,8 @@ export default {
       type: String
     },
     title: {
-      type: String
+      type: String,
+      default: ''
     },
     modulesCount: null,
     imageUrl: {

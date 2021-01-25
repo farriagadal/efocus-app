@@ -12,7 +12,7 @@
         >
           <CourseCard
             :id="course.id"
-            :label="course.state.name"
+            :label="course.label"
             :title="course.title"
             :modulesCount="course.modules_count"
             :imageUrl="course.image"

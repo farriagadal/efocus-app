@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <!-- <CoursesList :courses="courses" /> -->
+    <CoursesList :courses="courses" />
   </div>
 </template>
 
@@ -9,6 +9,12 @@ export default {
   data () {
     return {
       courses: [
+        {
+          id: 1
+        },
+        {
+          id: 2
+        },
         {
           id: 1
         },
