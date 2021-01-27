@@ -12,16 +12,18 @@
   },
   "dependencies": {
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.14.12",
+    "sass-loader": "^10.1.1"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.3",
-    "eslint-plugin-vue": "^7.4.1",
-    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config": "^3.1.0s",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/vuetify": "^1.11.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-vue": "^7.4.1"
   }
 }

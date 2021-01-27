@@ -3,14 +3,22 @@
     <div class="container">
       <div class="courses-list__results">
         <!-- <img src="@/assets/icons/results-icon.svg" alt=""> -->
-        {{ courses.length }} Colecciones disponibles para tu selección
+        {{ courses.length }} Metas agregadas recientemente
+
+        <v-btn
+          color="primary"
+          dark
+        >
+          nueva meta
+          <v-icon>mdi-plus</v-icon>
+        </v-btn>
       </div>
       <div class="courses-list__list">
         <div
           v-for="(course, index) in courses"
           :key="index"
         >
-          <CourseCard
+          <GoalCard
             :id="course.id"
             :label="course.label"
             :title="course.title"
@@ -18,6 +26,9 @@
             :imageUrl="course.image"
           />
         </div>
+        <button>
+          <v-icon>mdi-plus</v-icon>
+        </button>
       </div>
     </div>
   </div>
@@ -35,26 +46,25 @@ export default {
 
 <style lang="scss" scoped>
 .courses-list {
-  background: var(--color-secondary-3);
-  padding-top: 120px;
-  padding-bottom: 58px;
+  // background: var(--color-secondary-3);
+  padding-top: 30px;
+  padding-bottom: 60px;
 
-  @media (max-width: 768px) {
-    padding-left: 18px;
-    padding-right: 17px;
-    padding-top: 80px;
-  }
   &__results {
     display: flex;
-    font-family: "Arimo";
-    font-style: normal;
-    font-weight: normal;
+    align-items: center;
     font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    line-height: 25px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: larger;
 
     img {
       margin-right: 10px;
+    }
+
+    button {
+      margin-left: auto;
     }
   }
   &__list {

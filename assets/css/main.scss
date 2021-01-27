@@ -1,0 +1,51 @@
+// @import '@/assets/css/reset.scss';
+// @import '@/assets/css/grid.scss';
+// @import '@/assets/css/fonts.css';
+@import '@/assets/css/colors.scss';
+// @import '@/assets/css/buttons.scss';
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+
+.hero-title {
+  font-family: "Arimo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  color: #0B0B0B;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+:root {
+  --padding-mobile: 0 17px 0 18px;
+}
+
+.plyr__control.plyr__control--overlaid {
+  border: solid;
+  border-width: 3px;
+  background: none;
+
+  svg {
+    transform: scale(1.2);
+  }
+}

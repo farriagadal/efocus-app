@@ -4,7 +4,7 @@
     <div class="course-card__text">
       <div class="course-card__text__title">{{ title }}</div>
       <div class="course-card__text__description">
-        {{ modulesCount }} módulos
+        Última actualización 06-04-2012
       </div>
     </div>
     <nuxt-link :to="`/cursos/${getUrlSlug}`" class="course-card__link" />
@@ -41,8 +41,8 @@ export default {
 
 <style lang="scss" scoped>
 $width-card: 370px;
-$heigth-card: 500px;
-$heigth-card-mobile: 400px;
+$heigth-card: 420px;
+$heigth-card-mobile: 360px;
 
 .course-card {
   // background: url('~@/assets/images/course-img.jpg');
@@ -82,7 +82,6 @@ $heigth-card-mobile: 400px;
     width: min-content;
     display: flex;
     color: var(--color-secondary-3);
-    font-family: "Arimo";
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -97,12 +96,9 @@ $heigth-card-mobile: 400px;
     position: absolute;
     bottom: 33px;
     left: 30px;
-    width: 70%;
+    width: 80%;
 
     &__title {
-      font-family: "Arimo";
-      font-style: normal;
-      font-weight: normal;
       font-size: 30px;
       line-height: 36px;
       color: #FFFFFF;
@@ -110,9 +106,6 @@ $heigth-card-mobile: 400px;
     }
 
     &__description {
-      font-family: "Arimo";
-      font-style: normal;
-      font-weight: normal;
       font-size: 16px;
       line-height: 24px;
       display: flex;
